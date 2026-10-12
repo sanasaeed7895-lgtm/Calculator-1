@@ -1,0 +1,36 @@
+
+#include <iostream>
+using namespace std;
+
+class Calculator {
+public:
+    int a, b;
+
+    void input() {
+        cout << "Enter two numbers: ";
+        cin >> a >> b;
+    }
+
+    void calculate() {
+        cout << "Addition = " << a + b << endl;
+        cout << "Subtraction = " << a - b << endl;
+        cout << "Multiplication = " << a * b << endl;
+
+        if (b != 0)
+            cout << "Division = " << (float)a / b;
+        else
+            cout << "Division not possible";
+    }
+};
+
+int main() {
+    // Name: Sana Saeed
+    // CUID: 26250123
+    // Program No.: 1
+
+    Calculator c;
+    c.input();
+    c.calculate();
+
+    return 0;
+}
